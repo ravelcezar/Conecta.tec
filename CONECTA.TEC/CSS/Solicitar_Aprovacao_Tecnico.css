@@ -12,8 +12,10 @@ body {
 .container {
     width: 100%;
     max-width: 100%;
-    margin: 0;
+    margin: 0 auto;
     background-color: #ffffff;
+    
+    
 }
 
 header {
@@ -23,7 +25,6 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0;
 }
 
 header h1 {
@@ -51,9 +52,10 @@ header h1 {
 
 nav {
     background-color: #f8c471;
-    padding: 10px;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3) ;
+    padding: 19px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
 }
+
 nav ul {
     list-style: none;
     padding: 0;
@@ -66,56 +68,50 @@ nav ul li a {
     text-decoration: none;
     color: #333;
 }
-div.t{
-    display: flex;
-    margin-top: 100px;
+
+main {
+    padding: 20px;
 }
 
-
-
-
-
-
-table,
-th,
-td {
-  border: 1px solid;
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
 }
 
-table {
-  width: 100%;
-  max-width: 1000px;
-  height: 450px;
-  margin: 0 auto;
-  display: block;
-  overflow-x: auto;
-  border-spacing: 0;
+form label {
+    grid-column: span 2;
+    font-weight: bold;
 }
 
-tbody {
-  white-space: nowrap;
+form input[type="text"],
+form textarea,
+form input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
 }
 
-th{
-  padding: 5px 109.3px;
-  border-top-width: 0;
-  border-left-width: 0;
+form textarea {
+    resize: vertical;
+    height: 80px;
 }
 
-td {
-  padding: 15px 109.3px;
-  border-top-width: 0;
-  border-left-width: 0;
-  border-right-width: 0;
+form button {
+    width: 25%;
+    grid-column: span 2;
+    padding: 10px;
+    background-color: #2e2f50;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
 }
 
-th {
-  position: sticky;
-  top: 0;
-  background: #fff;
-  vertical-align: bottom;
+form button:hover {
+    width: 25%;
+    background-color: #1b1c33;
 }
 
-#status{
-    border-right-width: 0;
+#sol_apv{
+    color: white;
 }

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conecta.Tec</title>
+    <link rel="stylesheet" href="CSS\Solicitar_Aprovacao_Tecnico.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>CONECTA.Tec</h1>
+            <div class="user-info">
+                <span class="user-icon">👤</span>
+                <span class="user-name">Técnico</span>
+                <a href="index.html" class="logout">Sair</a>
+            </div>
+        </header>
+        <nav>
+        </nav>
+        <main>
+            <form>
+                <label for="equipamento">Equipamento:</label>
+                <input type="text" id="equipamento" name="equipamento">
+
+                <label for="parecer">Parecer Tec.:</label>
+                <textarea id="parecer" name="parecer"></textarea>
+
+                <label for="tipo">Tipo:</label>
+                <select id="tipo" name="tipo">
+                    <option value="qualificacao">QUALIFICAÇÃO</option>
+                    <option value="manutencao">MANUTENÇÃO</option>
+                    <option value="calibracao">CALIBRAÇÃO</option>
+                </select>
+
+                <label for="valor">Valor:</label>
+                <input type="text" id="valor" name="valor">
+
+                <label for="observacoes">MOTIVOS/OBSERVAÇÕES:</label>
+                <textarea id="observacoes" name="observacoes"></textarea>
+
+                <label for="certificado">Anexar Certificado:</label>
+                <input type="file" id="certificado" name="certificado">
+
+                <button>
+                    <a id="sol_apv" href="Tela_tecnico.html">Solicitar Aprovação</a>
+                </button>
+            </form>
+        </main>
+    </div>
+</body>
+</html>
