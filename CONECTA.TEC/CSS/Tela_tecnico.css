@@ -51,7 +51,7 @@ header h1 {
 
 nav {
     background-color: #f8c471;
-    padding: 10px;
+    padding: 19px;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3) ;
 }
 nav ul {
@@ -85,7 +85,7 @@ td {
 table {
   width: 100%;
   max-width: 1000px;
-  height: 450px;
+  height: 500px;
   margin: 0 auto;
   display: block;
   overflow-x: auto;
@@ -97,13 +97,13 @@ tbody {
 }
 
 th{
-  padding: 5px 109.3px;
+  padding: 5px 50.75px;
   border-top-width: 0;
   border-left-width: 0;
 }
 
 td {
-  padding: 15px 109.3px;
+  padding: 15px 50.75px;
   border-top-width: 0;
   border-left-width: 0;
   border-right-width: 0;
@@ -113,9 +113,16 @@ th {
   position: sticky;
   top: 0;
   background: #fff;
-  vertical-align: bottom;
+  vertical-align: center;
+
 }
 
-#status{
+#more{
+    padding: 5px 30px;
+    border-right-width: 0;
+}
+
+#mais{
+    padding: 15px 16px;
     border-right-width: 0;
 }
