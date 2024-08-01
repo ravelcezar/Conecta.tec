@@ -118,6 +118,21 @@ th {
     border-right-width: 0;
 }
 
+#aceitar_recusar{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    
+}
+
+#b_aceitar{
+    background-color: green;
+}
+
+#b_recusar{
+    background-color: red;
+}
+
 @media (max-width: 1000px){
     th{
         padding: 5px 40px;
