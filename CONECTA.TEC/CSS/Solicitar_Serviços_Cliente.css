@@ -74,24 +74,25 @@ nav ul li a {
 
 
 
+
 #form{
     display: flex;
     align-items: center;
     flex-direction: column;
     gap: 50px;
-    margin-top: 150px;
+    margin-top: 130px;
+    font-size: 20px;
 }
-#equipamento{
-    width: 1128px; 
+#equipamento,#Servico{
+    
+    width: 1015px;
     height: 35px;
     
 }
-#Servico{
-    width: 1128px; 
-    height: 35px;
-}
+
 #observacoes{
-    width: 1128px;
+    
+    width: 1015px;
     height: 150px;
     
 }
@@ -107,4 +108,62 @@ nav ul li a {
 
 #butao:hover {
     background-color: #1b1c33;
+}
+form textarea{
+    resize: none;
+}
+
+@media (max-width: 1020px){
+    #equipamento,#Servico{
+    
+        width: 675px;
+        height: 35px;
+        
+    }
+    #observacoes{
+    
+        width: 675px;
+        height: 150px;
+        
+    }
+}
+
+@media (max-width: 674px){
+    #equipamento,#Servico{
+    
+        width: 420px;
+        height: 35px;
+        
+    }
+    #observacoes{
+    
+        width: 420px;
+        height: 150px;
+        
+    }
+
+}
+
+@media (max-width: 420px){
+    #equipamento,#Servico{
+    
+        width: 320px;
+        height: 35px;
+        
+    }
+    #observacoes{
+    
+        width: 320px;
+        height: 150px;
+        
+    }
+    
+    .user-name{
+        display: none;
+        
+    }
+    .user-icon{
+        margin-right: 0;
+    }
+    
 }
