@@ -33,7 +33,7 @@
         <div class="containerCriarConta">
 
 
-            <form id="formCriarConta" action="">
+            <form id="formCriarConta" method="POST" action="">
 
                 <div #id="headerCriarConta" class="headerCriarConta">
                     <h1>
@@ -48,12 +48,12 @@
                     <br>
                     <br>
                     <label for="nomeUsuario"> Nome:</label><br> <br>
-                    <input type="text" placeholder="Digite seu nome"> <br> <br>
+                    <input type="text" placeholder="Digite seu nome" required title="Campo Obrigatório"> <br> <br>
                 </div>
                 <br> <br>
                 <div>
                     <label for="emailUsuario"> E-mail:</label> <br> <br>
-                    <input type="email" placeholder="Digite seu e-mail">
+                    <input type="email" placeholder="Digite seu e-mail" required title="Campo Obrigatório">
                     <br>
                     <br>
                 </div>
@@ -61,7 +61,7 @@
 
                 <div>
                     <label for="senhaUsuario"> Senha:</label> <br> <br>
-                    <input type="password">
+                    <input type="password" required title="Campo Obrigatório">
                     <br>
                 <br>
 
@@ -69,7 +69,7 @@
 
                 <div>
                     <label for="senhaUsuario"> Digite a senha novamente:</label> <br> <br>
-                    <input type="password">
+                    <input type="password" required title="Campo Obrigatório">
                     <br>
                 <br>
                 <br>
