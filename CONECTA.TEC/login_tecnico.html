@@ -12,16 +12,29 @@
             <h1 id="logo">CONECTA. TEC</h1>
         </header>
         <div id="logar">
-            <input type="text" placeholder ="Login" id="caixa_txt" />
-            <input type="password" placeholder ="Senha" id="caixa_txt" />
+            <input type="text" placeholder ="Login" id="caixa_login" />
+            <input type="password" placeholder ="Senha" id="caixa_senha" />
             <div id="botao">
                 <a href="index.html" id="butao">TÉCNICO</a>
-                <a href="Tela_tecnico.html" id="butao">Entrar</a>
+                <button type="submit" onclick="logar(); return false" id="butao">Entrar</button>
             </div>
         </div>
     </div>
 
+    <script>
+        function logar() {
+            var login = document.getElementById('caixa_login').value;
+            var senha = document.getElementById('caixa_senha').value;
 
-    
+            if (login == "tecnico" && senha == "tecnico") {
+//                alert("Bem-vindo");
+                location.href = "Tela_tecnico.html";
+            } else {
+                alert('Usuário ou senha incorretos');
+            }
+
+        }
+
+    </script>
 </body>
 </html>
