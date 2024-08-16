@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>login</title>
+    <link rel="stylesheet" href="CSS/cssLogin.css">
+</head>
+
+<body>
+    <div id="geral">
+        <header>
+            <h1 id="logo">CONECTA. TEC</h1>
+        </header>
+
+
+        <form id="logar">
+            <input type="text" placeholder="Login" id="login">
+            <input type="password" placeholder="Senha" id="senha">
+            <button style="width: 50px; height: 20px;" type="submit" onclick="logar(); return false"> Entrar</button>
+
+        </form>
+
+
+    </div>
+
+
+    <script>
+        function logar() {
+            var login = document.getElementById('login').value;
+            var senha = document.getElementById('senha').value;
+
+            if (login == "admin" && senha == "admin") {
+                alert("Bem-vindo");
+                location.href = "Tela_tecnico.html";
+            } else {
+                alert('Usuário ou senha incorretos');
+            }
+
+        }
+
+    </script>
+</body>
+
+</html>
