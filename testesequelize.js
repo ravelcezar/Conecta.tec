@@ -1,5 +1,5 @@
 const Sequelize = require('sequelize')
-const sequelize = new Sequelize('tests', 'root', 'garfanhoto',{
+const sequelize = new Sequelize('servicos', 'root', 'garfanhoto',{
     host: "localhost", 
     dialect: 'mysql'
 })
@@ -11,26 +11,53 @@ sequelize.authenticate().then(function(){
 })
 
 
-const Postagem = sequelize.define('tests',{ 
-    dispositivo:{
+const Postagem = sequelize.define('novoservico',{ // local pra criar os campos da tabela
+    equipamento:{
         type: Sequelize.STRING
     },
-    problema:{
+    servico:{
+        type: Sequelize.TEXT
+    },
+
+     motivo_observacoes:{
         type: Sequelize.TEXT
     }
 })
 
+
+
+
+
+// Postagem.sync({force:true}) //gera a tabela no banco
+
+
+
+/// inserir os regstros dentro dos campos da tabela
+
 Postagem.create({
-    dispositivo: "pc",
-    problema: "ruim"
+    equipamento: "bisturi",
+    servico: "troca",
+     motivo_observacoes: "na garantia"
 })
 
+const Usuarios = sequelize.define('usuario',{ // cria uma tabela no banco d dados chamada 'usuarios'
+    nome: {
+        type: Sequelize.STRING
+    },
 
-//Postagem.sync({force:true})
+    razao: {
+        type: Sequelize.STRING
+    },
+    email: {
+        type: Sequelize.STRING
+    }
+})
+
+//Usuarios.sync({force: true})
 
 
-
-
-
-
-
+Usuarios.create({
+   nome: "Fabio",
+    razao: "cliente",
+    email: "fabio@gmail.com"
+})

@@ -1,0 +1,91 @@
+
+            
+<h1>SERVIÇOS CADASTRADOS:</h1>
+
+{{#each posts}}
+<br>
+
+
+
+<div class="sevicocadastrado" >
+    <div class="descricao">
+        <p>EQUIPAMENTO:</p>
+        <p>{{equipamento}}</p>
+    </div>
+    <div class="descricao">
+        <P>SERVIÇO:</P>
+        <p>{{servico}}</p>
+    </div>
+    <br>
+    <div class="manutencaoservivo" >
+         <a href="/deletar/{{id}}"><button>Deletar</button></a>
+    <a href="/deletar/{{id}}"><button>Alterar</button></a>
+
+    </div>
+   
+</div>
+    
+
+ 
+
+{{/each}}
+
+
+<style type="text/css">
+  body {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    background-color: #2e2f50;
+    color: aliceblue;
+  }
+    .descricao{
+        display: flex;
+        flex-direction: column;
+        padding: auto;
+        margin: auto;
+    }
+  .sevicocadastrado{
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: auto;
+    margin: auto;
+    width: 50%;
+    color: black;
+    background-color: rgb(218, 238, 238);
+  }
+
+.manutencaoservivo{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    justify-content: space-around;
+
+}
+
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
